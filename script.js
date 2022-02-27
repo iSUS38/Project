@@ -1,0 +1,1 @@
+alert("This is example of my layout work. I did it by using bootstrap and scss");

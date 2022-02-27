@@ -1,0 +1,25 @@
+@mixin circle($size, $color, $top, $bottom, $left, $right) {
+    content: " ";
+    position: absolute;
+    min-width: $size;
+    min-height: $size;
+    background-color: $color;
+    border-radius: $size/2;
+    @if $top != 0 {
+        top: $top;
+    }
+    @if $right != 0 {
+        right: $right;
+    }
+    @if $left != 0 {
+        left: $left;
+    }
+    @if $bottom !=0{
+        bottom: $bottom;
+    }
+}
+@mixin review-text ($mt, $ml, $fz) {
+    margin-top: $mt;
+    margin-left: $ml;
+    font-size: $fz;
+}
